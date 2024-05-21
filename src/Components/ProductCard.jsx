@@ -2,11 +2,11 @@ import React from 'react'
 
 const ProductCard = ({product}) => {
   return (
-    <div key={product.id} className="border  rounded">
+    <div key={product.id} className="border  rounded overflow-hidden shadow-md hover:shadow-lg">
     <img
       src={product.cover_image}
       alt={product.title}
-      className="w-full h-auto object-cover"
+      className="w-full h-auto object-cover transition hover:-translate-y-1 hover:scale-110"
     />
     <div className='p-2'>
     <h2 className="text-lg font-semibold">{product.title}</h2>
