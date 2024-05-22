@@ -64,6 +64,7 @@ const CartModal = () => {
       open={cartOpen}
       onClose={() => dispatch(closeCart())}
       placement={"right"}
+      
       style={{ backgroundColor: "#f7fafc" }}
       /* onClose={closeCart} */
     >
@@ -96,17 +97,17 @@ const CartModal = () => {
               {cartItems.map((item) => (
                 <div
                   key={item.cart_id}
-                  className="flex justify-between items-center mb-4 gap-5"
+                  className="flex items-center mb-8 gap-5 xl:gap-8"
                 >
-                  <div>
+                  <div >
                     <img
                       src={item.cover_image}
                       alt={item.title}
-                      className="w-20 h-auto object-cover"
+                      className="h-auto w-32 object-cover"
                     />
                   </div>
-                  <div>
-                    <div>
+                  <div className="gap-4 flex flex-col">
+                    <div className="flex flex-col gap-4">
                       <h4 className="font-medium">{item.title}</h4>
                       <p className="font-semibold">Size: {item.size}</p>
                       <p className="font-semibold">Price: {item.price} AED</p>

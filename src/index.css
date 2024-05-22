@@ -16,3 +16,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.rc-drawer-content-wrapper{
+  width: auto !important;
+}
+@media (min-width:1050px) {
+  .rc-drawer-content-wrapper{
+    width: 40% !important;
+  }
+}
+@media (min-width:1300px) {
+  .rc-drawer-content-wrapper{
+    width: 30% !important;
+  }
+}
