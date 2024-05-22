@@ -19,7 +19,7 @@ const Navbar = () => {
           
           <CiShoppingCart fontSize={40}/>
           <span
-            className={`cart-counter-badge flex items-center justify-center  right-0 text-white absolute top-[5px] w-5 h-5 text-xs xl:-end-3 rounded-full font-semibold`}
+            className={`cart-counter-badge flex items-center justify-center  right-0 text-white absolute top-[5px] w-5 h-5 text-xs  rounded-full font-semibold`}
             style={{ backgroundColor: 'black' }}
           >
             {cartItems? cartItems?.length : 0}
