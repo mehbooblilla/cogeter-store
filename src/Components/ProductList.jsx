@@ -2,19 +2,12 @@ import React, { useEffect } from "react";
 import ProductCard from "./ProductCard";
 import CartModal from "./CardModel";
 import { useDispatch, useSelector } from "react-redux";
-// import { fetchProducts } from "../features/products/productsSlice";
 import { addItemToCart, openCart } from "../Redux/cart/cartSlice";
 
 const ProductList = ({ products }) => {
   const dispatch = useDispatch();
 
-  // const error = useSelector((state) => state.products.error);
-
-  // useEffect(() => {
-  //   if (productStatus === "idle") {
-  //     dispatch(fetchProducts());
-  //   }
-  // }, [productStatus, dispatch]);
+ 
 
   const handleAddToCart = (product, variant) => {
     console.log("product", product);
